@@ -20,7 +20,6 @@ export default function Partners() {
             whileInView={{ opacity: 1 }}
             className="flex items-center"
           >
-             {/* O caminho começa com /images */}
              <Image 
                src="/images/isep.png" 
                alt="ISEP Logo" 

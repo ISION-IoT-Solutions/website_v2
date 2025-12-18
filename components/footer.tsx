@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Github, Linkedin, Twitter, Box } from 'lucide-react';
+import { Github, Linkedin, Box } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,7 +12,6 @@ export default function Footer() {
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           
-          {/* Coluna 1: Marca e Missão */}
           <div className="col-span-1 md:col-span-1">
             <Link href="/" className="flex items-center space-x-2 text-white text-xl font-bold mb-4">
               <Box className="w-6 h-6 text-blue-500" />
@@ -23,7 +22,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Coluna 2: Soluções */}
           <div>
             <h3 className="text-white font-semibold mb-4">Solutions</h3>
             <ul className="space-y-3 text-sm">
@@ -39,7 +37,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Coluna 3: Empresa */}
           <div>
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-3 text-sm">
@@ -55,7 +52,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Coluna 4: Legal */}
           <div>
             <h3 className="text-white font-semibold mb-4">Legal</h3>
             <ul className="space-y-3 text-sm">
@@ -72,24 +68,19 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Linha Divisória e Copyright */}
         <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-slate-500">
             © {currentYear} Ision IoT Solutions. All rights reserved.
           </p>
           
           <div className="flex space-x-6">
-            <Link href="#" className="text-slate-500 hover:text-white transition-colors">
+            <Link href="https://linkedin.com/company/isionpt/" className="text-slate-500 hover:text-white transition-colors">
               <Linkedin className="w-5 h-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
-            <Link href="#" className="text-slate-500 hover:text-white transition-colors">
+            <Link href="https://github.com/ISION-IoT-Solutions/" className="text-slate-500 hover:text-white transition-colors">
               <Github className="w-5 h-5" />
               <span className="sr-only">GitHub</span>
-            </Link>
-            <Link href="#" className="text-slate-500 hover:text-white transition-colors">
-              <Twitter className="w-5 h-5" />
-              <span className="sr-only">Twitter</span>
             </Link>
           </div>
         </div>
