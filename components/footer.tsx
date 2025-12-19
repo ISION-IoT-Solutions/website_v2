@@ -32,7 +32,10 @@ export default function Footer() {
                 <Link href="#events" className="hover:text-blue-400 transition-colors">Event Access</Link>
               </li>
               <li>
-                <span className="text-slate-600 cursor-not-allowed">Waste Management (Soon)</span>
+                <Link href="#waste" className="hover:text-blue-400 transition-colors">Waste Management</Link>
+              </li>
+              <li>
+                <Link href="#industrial" className="hover:text-blue-400 transition-colors">Industrial Management</Link>
               </li>
             </ul>
           </div>
