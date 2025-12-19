@@ -50,7 +50,7 @@ export default function Footer() {
                 <Link href="#partners" className="hover:text-blue-400 transition-colors">Partners</Link>
               </li>
               <li>
-                <a href="mailto:contact@ision.pt" className="hover:text-blue-400 transition-colors">Contact</a>
+                <a href="mailto:contact@ision.contact@gmail.com" className="hover:text-blue-400 transition-colors">Contact</a>
               </li>
             </ul>
           </div>
