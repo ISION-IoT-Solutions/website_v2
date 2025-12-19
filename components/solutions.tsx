@@ -1,6 +1,6 @@
 'use client';
 
-import { Car, Ticket, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Car, Ticket, CheckCircle2, Factory, Trash2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const solutions = [
@@ -29,6 +29,32 @@ const solutions = [
     ],
     icon: <Ticket className="w-10 h-10 text-purple-400" />,
     gradient: "from-purple-500/20 to-pink-500/20",
+  },
+  {
+    title: "ISION Waste Managment",
+    category: "Smart City",
+    description: "Optimized waste collection system that enhances route efficiency and reduces environmental impact.",
+    details: [
+      "Optimizes waste collection routes",
+      "Reduces operational costs by up to 25%",
+      "Minimizes environmental impact",
+      "Sensors for fill-level monitoring"
+    ],
+    icon: <Trash2 className="w-10 h-10 text-purple-400" />,
+    gradient: "from-purple-500/20 to-pink-500/20",
+  },
+  {
+    title: "ISION Industrial Managment",
+    category: "Industry 4.0",
+    description: "Advanced IoT solution for industrial equipment monitoring and predictive maintenance.",
+    details: [
+      "Real-time equipment monitoring",
+      "Predictive maintenance alerts",
+      "Improves operational efficiency",
+      "Reduces downtime and costs"
+    ],
+    icon: <Factory className="w-10 h-10 text-blue-400" />,
+    gradient: "from-blue-500/20 to-cyan-500/20",
   }
 ];
 

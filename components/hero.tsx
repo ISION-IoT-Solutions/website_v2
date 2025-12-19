@@ -5,14 +5,12 @@ import { motion } from 'framer-motion';
 import DashboardPreview from "@/components/dashboardPreview";
 export default function Hero() {
   return (
-    <section className="relative w-full bg-slate-950 py-24 lg:py-32 overflow-hidden">
-      {/* Background Gradient Effect */}
+    <section className="relative w-full bg-slate-950 py-24 lg:py-16 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/40 via-slate-950 to-slate-950" />
       
-      <div className="container relative z-10 mx-auto px-4 md:px-6">
+      <div className="container relative z-10 mx-auto px-4 md:px-14">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
           
-          {/* Texto e CTAs */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -41,15 +39,12 @@ export default function Hero() {
               </button>
             </div>
           </motion.div>
-
-          {/* Imagem / Ilustração */}
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mx-auto w-full lg:mr-0"
           >
-            {/* Removemos o div antigo com o placeholder e colocamos o componente */}
             <DashboardPreview /> 
             
           </motion.div>

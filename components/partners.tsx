@@ -19,14 +19,17 @@ export default function Partners() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             className="flex items-center"
-          >
+            
+          > 
+          <a href="https://www.isep.ipp.pt" target="_blank" rel="noopener noreferrer">
              <Image 
                src="/images/isep.png" 
                alt="ISEP Logo" 
                width={150} 
                height={60} 
                className="h-12 w-auto object-contain brightness-0 invert" 
-             />
+               />
+               </a>
           </motion.div>
 
           {/* SUCESSOS CRIATIVOS LOGO */}
@@ -35,14 +38,17 @@ export default function Partners() {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
             className="flex items-center"
+            
           >
+            <a href="https://sucessos-criativos.pt" target="_blank" rel="noopener noreferrer">
              <Image 
                src="/images/sucessos_criativos.png" 
                alt="Sucessos Criativos Logo" 
                width={150} 
                height={60} 
                className="h-12 w-auto object-contain brightness-0 invert"
-             />
+               />
+               </a>
           </motion.div>
 
         </div>
